@@ -1,10 +1,12 @@
-type Task @model {
+type User {
   id: ID!
-  title: String!
-  description: String
-  status: String
+  name: String!
 }
-type Note @model {
+
+type Post @model {
   id: ID!
-  content: String!
+  user: User!
+  text: String!
+  imageUrl: String!
+  createdTimestamp: Int!
 }

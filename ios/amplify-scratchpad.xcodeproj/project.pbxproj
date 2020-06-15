@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11D8D84FC8BD42FD9027FC61 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DC8E66E6414B6C987EC223 /* Note.swift */; };
 		20197111D1B742AAB1D6A88E /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = F5CF961B45A34B4A94117F4E /* amplifyconfiguration.json */; };
-		5B78908378E9404AAFD50BFD /* Task+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33EB2CA0344017A6A58AEA /* Task+Schema.swift */; };
+		26DF815FDD9047B89B238A6E /* Post+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237B93DF7BF4AE88E1E096F /* Post+Schema.swift */; };
 		6CF2CC12D7354E458ECA784C /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD35F6E50BAB4BBEB99A8C66 /* AmplifyModels.swift */; };
 		8D29EC96B980450B87D17E44 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FB123BA16E83479798835CE7 /* awsconfiguration.json */; };
 		9E26003D2497E72E009ED2BC /* CRUDOView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E26003C2497E72E009ED2BC /* CRUDOView.swift */; };
@@ -23,16 +22,16 @@
 		9E95F3EB2497C42D0019920A /* CRUDOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E95F3EA2497C42D0019920A /* CRUDOViewController.swift */; };
 		9E95F3F12497DD410019920A /* AWSDataStorePlugin+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E95F3F02497DD410019920A /* AWSDataStorePlugin+Extensions.swift */; };
 		A77B945DF61766E3B3C5FE91 /* Pods_amplify_scratchpad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DCAF2FCB2080FAF70A0E4E /* Pods_amplify_scratchpad.framework */; };
-		AFF855EC69B14DAF85DBC899 /* Note+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = A235960A6D3E42B0B6053B0D /* Note+Schema.swift */; };
-		B498172AAED94895A1B361CF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F074B78135478399E3085B /* Task.swift */; };
+		BB49E5320C4C4E4599035CF2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664E488F2E494B18893089A6 /* Post.swift */; };
+		E37A067DD2604B76B3524D84 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573B606FDCF74EAB935C8069 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00274C65C50844AB9FD41BD3 /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
 		2CEB10391F9D4701A45BF051 /* schema.graphql */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/amplifyDatasource/schema.graphql; sourceTree = "<group>"; };
-		5A33EB2CA0344017A6A58AEA /* Task+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "Task+Schema.swift"; path = "amplify/generated/models/Task+Schema.swift"; sourceTree = "<group>"; };
-		64DC8E66E6414B6C987EC223 /* Note.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = Note.swift; path = amplify/generated/models/Note.swift; sourceTree = "<group>"; };
-		68F074B78135478399E3085B /* Task.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = Task.swift; path = amplify/generated/models/Task.swift; sourceTree = "<group>"; };
+		3237B93DF7BF4AE88E1E096F /* Post+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "Post+Schema.swift"; path = "amplify/generated/models/Post+Schema.swift"; sourceTree = "<group>"; };
+		573B606FDCF74EAB935C8069 /* User.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = User.swift; path = amplify/generated/models/User.swift; sourceTree = "<group>"; };
+		664E488F2E494B18893089A6 /* Post.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = Post.swift; path = amplify/generated/models/Post.swift; sourceTree = "<group>"; };
 		6CF8E4D89E339AAD9FA84327 /* Pods-amplify-scratchpad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amplify-scratchpad.release.xcconfig"; path = "Target Support Files/Pods-amplify-scratchpad/Pods-amplify-scratchpad.release.xcconfig"; sourceTree = "<group>"; };
 		8AE66D1369937473FA4BCF6C /* Pods-amplify-scratchpad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amplify-scratchpad.debug.xcconfig"; path = "Target Support Files/Pods-amplify-scratchpad/Pods-amplify-scratchpad.debug.xcconfig"; sourceTree = "<group>"; };
 		9E26003C2497E72E009ED2BC /* CRUDOView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDOView.swift; sourceTree = "<group>"; };
@@ -47,7 +46,6 @@
 		9E95F3E42497C40F0019920A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E95F3EA2497C42D0019920A /* CRUDOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDOViewController.swift; sourceTree = "<group>"; };
 		9E95F3F02497DD410019920A /* AWSDataStorePlugin+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AWSDataStorePlugin+Extensions.swift"; path = "amplify-scratchpad/Extensions/AWSDataStorePlugin+Extensions.swift"; sourceTree = SOURCE_ROOT; };
-		A235960A6D3E42B0B6053B0D /* Note+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "Note+Schema.swift"; path = "amplify/generated/models/Note+Schema.swift"; sourceTree = "<group>"; };
 		B0DCAF2FCB2080FAF70A0E4E /* Pods_amplify_scratchpad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_amplify_scratchpad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5CF961B45A34B4A94117F4E /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		FB123BA16E83479798835CE7 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
@@ -99,10 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				FD35F6E50BAB4BBEB99A8C66 /* AmplifyModels.swift */,
-				64DC8E66E6414B6C987EC223 /* Note.swift */,
-				A235960A6D3E42B0B6053B0D /* Note+Schema.swift */,
-				68F074B78135478399E3085B /* Task.swift */,
-				5A33EB2CA0344017A6A58AEA /* Task+Schema.swift */,
+				664E488F2E494B18893089A6 /* Post.swift */,
+				3237B93DF7BF4AE88E1E096F /* Post+Schema.swift */,
+				573B606FDCF74EAB935C8069 /* User.swift */,
 			);
 			name = AmplifyModels;
 			path = .;
@@ -153,11 +150,11 @@
 				9E95F3D82497C40F0019920A /* SceneDelegate.swift */,
 				9E95F3DA2497C40F0019920A /* CRUDOContentView.swift */,
 				9E95F3EA2497C42D0019920A /* CRUDOViewController.swift */,
+				9E26003C2497E72E009ED2BC /* CRUDOView.swift */,
 				9E95F3DC2497C40F0019920A /* Assets.xcassets */,
 				9E95F3E12497C40F0019920A /* LaunchScreen.storyboard */,
 				9E95F3E42497C40F0019920A /* Info.plist */,
 				9E95F3DE2497C40F0019920A /* Preview Content */,
-				9E26003C2497E72E009ED2BC /* CRUDOView.swift */,
 			);
 			path = "amplify-scratchpad";
 			sourceTree = "<group>";
@@ -314,10 +311,9 @@
 				9E95F3EB2497C42D0019920A /* CRUDOViewController.swift in Sources */,
 				9E95F3DB2497C40F0019920A /* CRUDOContentView.swift in Sources */,
 				6CF2CC12D7354E458ECA784C /* AmplifyModels.swift in Sources */,
-				11D8D84FC8BD42FD9027FC61 /* Note.swift in Sources */,
-				AFF855EC69B14DAF85DBC899 /* Note+Schema.swift in Sources */,
-				B498172AAED94895A1B361CF /* Task.swift in Sources */,
-				5B78908378E9404AAFD50BFD /* Task+Schema.swift in Sources */,
+				BB49E5320C4C4E4599035CF2 /* Post.swift in Sources */,
+				26DF815FDD9047B89B238A6E /* Post+Schema.swift in Sources */,
+				E37A067DD2604B76B3524D84 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
