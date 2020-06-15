@@ -147,17 +147,12 @@
 		9E95F3D52497C40F0019920A /* amplify-scratchpad */ = {
 			isa = PBXGroup;
 			children = (
-				9E8A23D92497E04600C6401B /* Extensions */,
-				9E8A23D42497DF6A00C6401B /* Services */,
 				9E95F3D62497C40F0019920A /* AppDelegate.swift */,
 				9E95F3D82497C40F0019920A /* SceneDelegate.swift */,
-				9E95F3DA2497C40F0019920A /* CRUDOContentView.swift */,
-				9E95F3EA2497C42D0019920A /* CRUDOViewController.swift */,
-				9E95F3DC2497C40F0019920A /* Assets.xcassets */,
-				9E95F3E12497C40F0019920A /* LaunchScreen.storyboard */,
-				9E95F3E42497C40F0019920A /* Info.plist */,
-				9E95F3DE2497C40F0019920A /* Preview Content */,
-				9E26003C2497E72E009ED2BC /* CRUDOView.swift */,
+				9EFE72C124983907000BBD6B /* DataStore */,
+				9E8A23D92497E04600C6401B /* Extensions */,
+				9E8A23D42497DF6A00C6401B /* Services */,
+				9EFE72C4249839A5000BBD6B /* Resources */,
 			);
 			path = "amplify-scratchpad";
 			sourceTree = "<group>";
@@ -168,6 +163,43 @@
 				9E95F3DF2497C40F0019920A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9EFE72C124983907000BBD6B /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				9EFE72C324983936000BBD6B /* UIKit */,
+				9EFE72C22498392B000BBD6B /* SwiftUI */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		9EFE72C22498392B000BBD6B /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				9E95F3DA2497C40F0019920A /* CRUDOContentView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		9EFE72C324983936000BBD6B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				9E95F3EA2497C42D0019920A /* CRUDOViewController.swift */,
+				9E26003C2497E72E009ED2BC /* CRUDOView.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		9EFE72C4249839A5000BBD6B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E95F3DE2497C40F0019920A /* Preview Content */,
+				9E95F3DC2497C40F0019920A /* Assets.xcassets */,
+				9E95F3E12497C40F0019920A /* LaunchScreen.storyboard */,
+				9E95F3E42497C40F0019920A /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,10 +487,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"amplify-scratchpad/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"amplify-scratchpad/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 5K99777NES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "amplify-scratchpad/Info.plist";
+				INFOPLIST_FILE = "amplify-scratchpad/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,10 +508,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"amplify-scratchpad/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"amplify-scratchpad/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 5K99777NES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "amplify-scratchpad/Info.plist";
+				INFOPLIST_FILE = "amplify-scratchpad/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
