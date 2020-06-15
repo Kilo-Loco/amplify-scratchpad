@@ -14,7 +14,14 @@ final class AmpService {
     
     func configure() {
         do {
+            // Auth
+            try Amplify.add(plugin: AWSCognitoAuthPlugin())
+            
+            // DataStore
+            try Amplify.add(plugin: AWSAPIPlugin()) // Needed after connecting to backend
             try Amplify.add(plugin: AWSDataStorePlugin.default)
+            
+            // Amplify
             try Amplify.configure()
             
             print("Amplify configured")

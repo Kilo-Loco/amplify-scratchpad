@@ -6,7 +6,14 @@ target 'amplify-scratchpad' do
   use_frameworks!
 
   # Pods for amplify-scratchpad
+  
+  # Amplify
   pod 'Amplify'
+  
+  # Auth
+  pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
+  
+  # DataStore
   pod 'Amplify/Tools'
   pod 'AmplifyPlugins/AWSAPIPlugin'
   pod 'AmplifyPlugins/AWSDataStorePlugin'
