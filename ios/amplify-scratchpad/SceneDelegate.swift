@@ -26,13 +26,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private func useSwiftUI() -> UIViewController {
-        let contentView = ContentView()
+        let contentView = CRUDOContentView()
         let hostingController = UIHostingController(rootView: contentView)
         return hostingController
     }
     
     private func useUIKit() -> UIViewController {
-        ViewController()
+        CRUDOViewController()
     }
 
 }
