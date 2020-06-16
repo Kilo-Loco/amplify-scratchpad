@@ -15,6 +15,8 @@
 		9E26003D2497E72E009ED2BC /* CRUDOView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E26003C2497E72E009ED2BC /* CRUDOView.swift */; };
 		9E798592249852EB002B2A06 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E798591249852EB002B2A06 /* ConfirmationViewController.swift */; };
 		9E79859424985337002B2A06 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E79859324985337002B2A06 /* ConfirmationView.swift */; };
+		9E79859624985E0F002B2A06 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E79859524985E0F002B2A06 /* LoginViewController.swift */; };
+		9E79859824985E52002B2A06 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E79859724985E52002B2A06 /* LoginView.swift */; };
 		9E8A23D62497DF8D00C6401B /* AmpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8A23D52497DF8D00C6401B /* AmpService.swift */; };
 		9E95F3D72497C40F0019920A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E95F3D62497C40F0019920A /* AppDelegate.swift */; };
 		9E95F3D92497C40F0019920A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E95F3D82497C40F0019920A /* SceneDelegate.swift */; };
@@ -42,6 +44,8 @@
 		9E26003C2497E72E009ED2BC /* CRUDOView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDOView.swift; sourceTree = "<group>"; };
 		9E798591249852EB002B2A06 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 		9E79859324985337002B2A06 /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
+		9E79859524985E0F002B2A06 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9E79859724985E52002B2A06 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9E8A23D52497DF8D00C6401B /* AmpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpService.swift; sourceTree = "<group>"; };
 		9E95F3D32497C40F0019920A /* amplify-scratchpad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "amplify-scratchpad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E95F3D62497C40F0019920A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -226,6 +230,8 @@
 				9EFE72C924984381000BBD6B /* SignUpView.swift */,
 				9E798591249852EB002B2A06 /* ConfirmationViewController.swift */,
 				9E79859324985337002B2A06 /* ConfirmationView.swift */,
+				9E79859524985E0F002B2A06 /* LoginViewController.swift */,
+				9E79859724985E52002B2A06 /* LoginView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -378,7 +384,9 @@
 				6CF2CC12D7354E458ECA784C /* AmplifyModels.swift in Sources */,
 				9E798592249852EB002B2A06 /* ConfirmationViewController.swift in Sources */,
 				11D8D84FC8BD42FD9027FC61 /* Note.swift in Sources */,
+				9E79859824985E52002B2A06 /* LoginView.swift in Sources */,
 				9EFE72CA24984381000BBD6B /* SignUpView.swift in Sources */,
+				9E79859624985E0F002B2A06 /* LoginViewController.swift in Sources */,
 				AFF855EC69B14DAF85DBC899 /* Note+Schema.swift in Sources */,
 				B498172AAED94895A1B361CF /* Task.swift in Sources */,
 				5B78908378E9404AAFD50BFD /* Task+Schema.swift in Sources */,

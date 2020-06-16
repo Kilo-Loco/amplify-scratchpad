@@ -43,7 +43,13 @@ class ConfirmationViewController: UIViewController {
         _ = Amplify.Auth.confirmSignUp(for: username, confirmationCode: confirmationCode) { result in
             switch result {
             case .success(let signUpResult):
-                print(signUpResult)
+                
+                if signUpResult.isSignupComplete {
+                    print("Sign Up Complete")
+                } else {
+                    print("some other remaing step: \(signUpResult.nextStep)")
+                }
+                
                 
             case .failure(let error):
                 print("Unable to confirm email \(error)")

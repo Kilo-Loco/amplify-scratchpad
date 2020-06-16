@@ -45,12 +45,17 @@ class SignUpController: UIViewController {
         let userAttributes = [AuthUserAttribute(.email, value: email)]
         let options = AuthSignUpRequest.Options(userAttributes: userAttributes)
         
-        _ = Amplify.Auth.signUp(username: email, password: password, options: options) { result in
+        _ = Amplify.Auth.signUp(username: email, password: password, options: options) { [weak self] result in
             switch result {
             case .success(let signUpResult):
                 if case .confirmUser(let deliveryDetails, let additionalInfo) = signUpResult.nextStep {
                     print("delivery details \(String(describing: deliveryDetails))")
                     print("Additional info: \(String(describing: additionalInfo))")
+                    
+                    DispatchQueue.main.async {
+                        self?.showConfirmationView(for: email)
+                    }
+                    
                 } else {
                     print("Sign up complete")
                 }
@@ -59,5 +64,11 @@ class SignUpController: UIViewController {
                 print("an error occured while registering a user \(error)")
             }
         }
+    }
+    
+    func showConfirmationView(for username: String) {
+        let confirmationVC = ConfirmationViewController(username: username)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationController?.pushViewController(confirmationVC, animated: true)
     }
 }

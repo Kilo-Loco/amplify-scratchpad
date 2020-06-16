@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = scene as? UIWindowScene else { return }
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = rootController(for: .auth, using: .UIKit)
+        window.rootViewController = rootController(for: .auth(.login), using: .UIKit)
         self.window = window
         window.makeKeyAndVisible()
     }
@@ -27,8 +27,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         case (.auth, .SwiftUI):
             return nil
             
-        case (.auth, .UIKit):
-            return authUIKit
+        case (.auth(let entryPoint), .UIKit):
+            switch entryPoint {
+            case .forgotPassword:
+                return nil
+                
+            case .login:
+                return loginUIKit
+                
+            case .signUp:
+                return signUpUIKit
+            }
             
         case (.dataStore, .SwiftUI):
             return dataStoreSwiftUI
@@ -39,8 +48,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
     }
     
-    private var authUIKit: UIViewController {
-        SignUpController()
+    private var loginUIKit: UIViewController {
+        let nav = UINavigationController(rootViewController: LoginViewController())
+        nav.setNavigationBarHidden(true, animated: false)
+        return nav
+    }
+    
+    private var signUpUIKit: UIViewController {
+        let nav = UINavigationController(rootViewController: SignUpController())
+        nav.setNavigationBarHidden(true, animated: false)
+        return nav
     }
     
     private var dataStoreSwiftUI: UIViewController {
@@ -57,7 +74,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 extension SceneDelegate {
     enum Feature {
-        case auth, dataStore
+        case auth(AuthEntryPoint)
+        case dataStore
+        
+        enum AuthEntryPoint {
+            case forgotPassword, login, signUp
+        }
     }
     
     enum UserInterface {
