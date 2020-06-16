@@ -24,8 +24,9 @@ class SignUpController: UIViewController {
     }
     
     func configureCommunication() {
-        ui.didTapSignUp = {
-            print("sign up tapped")
+        ui.didTapSignUp = { [weak self] (email, password) in
+            print(email, password)
+            self?.signUp(email: email, password: password)
         }
     }
     
@@ -40,4 +41,23 @@ class SignUpController: UIViewController {
         }
     }
     
+    func signUp(email: String, password: String) {
+        let userAttributes = [AuthUserAttribute(.email, value: email)]
+        let options = AuthSignUpRequest.Options(userAttributes: userAttributes)
+        
+        _ = Amplify.Auth.signUp(username: email, password: password, options: options) { result in
+            switch result {
+            case .success(let signUpResult):
+                if case .confirmUser(let deliveryDetails, let additionalInfo) = signUpResult.nextStep {
+                    print("delivery details \(String(describing: deliveryDetails))")
+                    print("Additional info: \(String(describing: additionalInfo))")
+                } else {
+                    print("Sign up complete")
+                }
+                
+            case .failure(let error):
+                print("an error occured while registering a user \(error)")
+            }
+        }
+    }
 }

@@ -10,7 +10,7 @@ import UIKit
 
 class SignUpView: UIView {
     
-    var didTapSignUp: (() -> Void)?
+    var didTapSignUp: ((_ email: String, _ password: String) -> Void)?
     
     private lazy var emailTextField: UITextField = {
         let textField = UITextField()
@@ -79,6 +79,8 @@ class SignUpView: UIView {
     
     @objc
     private func didTapSignUpButton() {
-        didTapSignUp?()
+        let email = emailTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
+        didTapSignUp?(email, password)
     }
 }
