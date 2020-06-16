@@ -16,5 +16,23 @@
                 "iosfeb3801a": {}
             }
         }
+    },
+    "qa": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-ios-qa-75044-authRole",
+            "UnauthRoleArn": "arn:aws:iam::680165778557:role/amplify-ios-qa-75044-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::680165778557:role/amplify-ios-qa-75044-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "amplify-ios-qa-75044-deployment",
+            "UnauthRoleName": "amplify-ios-qa-75044-unauthRole",
+            "StackName": "amplify-ios-qa-75044",
+            "StackId": "arn:aws:cloudformation:eu-west-1:680165778557:stack/amplify-ios-qa-75044/c42251a0-afe0-11ea-a73e-0a7ffa9bc424",
+            "AmplifyAppId": "d33sgsvxlq2ev8"
+        },
+        "categories": {
+            "auth": {
+                "iosfeb3801a": {}
+            }
+        }
     }
 }
