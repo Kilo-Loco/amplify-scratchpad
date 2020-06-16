@@ -6,6 +6,7 @@
 //  Copyright © 2020 Kilo Loco. All rights reserved.
 //
 
+import Amplify
 import UIKit
 
 class LoginViewController: UIViewController {
@@ -19,6 +20,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCommunication()
+        fetchCurrentAuthSession()
     }
     
     func configureCommunication() {
@@ -28,9 +30,31 @@ class LoginViewController: UIViewController {
         }
     }
     
-    func login(username: String, password: String) {
-        
+    func fetchCurrentAuthSession() {
+        _ = Amplify.Auth.fetchAuthSession { result in
+            switch result {
+            case .success(let session):
+                print("Is user signed in - \(session.isSignedIn)")
+            case .failure(let error):
+                print("Fetch session failed with error \(error)")
+            }
+        }
     }
     
+    func login(username: String, password: String) {
+        _ = Amplify.Auth.signIn(username: username, password: password) { result in
+            switch result {
+            case .success(let signInResult):
+                if signInResult.isSignedIn {
+                    print("signed in successfully")
+                } else {
+                    print("something went wrong with sign in")
+                }
+                
+            case .failure(let error):
+                print("Sign in failed \(error)")
+            }
+        }
+    }
     
 }
